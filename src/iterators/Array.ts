@@ -1,7 +1,7 @@
-import Aggregator from "./Aggregator";
+import Aggregator from "./interface/Aggregator";
 import ArrayIterator from "./ArrayIterator";
 import Item from "./Item";
-import Iterator from "./iterator";
+import Iterator from "./interface/iterator";
 
 class Array implements Aggregator<Item>{
     constructor(private items:Item[]){}

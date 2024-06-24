@@ -1,6 +1,6 @@
 import Array from "./Array";
 import Item from "./Item";
-import Iterator from "./iterator";
+import Iterator from "./interface/iterator";
 
 class ArrayIterator implements Iterator<Item>{
     private index:number
@@ -16,8 +16,6 @@ class ArrayIterator implements Iterator<Item>{
     current(): Item {
         return this.array.getItem(this.index)
     }
-
-    
 }
 
 export default ArrayIterator

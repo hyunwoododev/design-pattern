@@ -1,7 +1,5 @@
 class Item{
-    constructor(private _name: string, private _cost: number){
-
-    }
+    constructor(private _name: string, private _cost: number){}
 
     get name(){
         return this._name
