@@ -1,3 +1,1 @@
-# design-pattern
-# design-pattern
-# design-pattern
+# Typescript를 이용한 Class patter practice
