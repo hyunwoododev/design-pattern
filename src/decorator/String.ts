@@ -1,6 +1,14 @@
 import Item from "./Item";
 
 export default class Strings extends Item{
+    private data = new Array<string>()
+
+    constructor(){ super() }
+    
+    add(str:string):void{
+        this.data.push(str)
+    }
+
     getLinesCount(): number {
        return this.data.length
     }
@@ -19,13 +27,6 @@ export default class Strings extends Item{
 
     getString(i: number): string {
        return this.data[i]
-    }
-
-
-    private data = new Array<string>()
-    constructor(){ super() }
-    add(str:string):void{
-        this.data.push(str)
     }
 
 }

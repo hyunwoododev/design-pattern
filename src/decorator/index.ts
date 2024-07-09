@@ -3,8 +3,10 @@ import LineNumberDecorator from "./LineNumberDecorator";
 import SideDecorator from "./SideDecorator";
 import Strings from "./String";
 
-// decorator 패턴은 어떤 객체에 기능(장식)을 적용할때 그객체와 적용될 기능을 동일시 하 수 있음
-// 다양한 기능을 중첩해서 적용할수있고 적용되는 기능의 순서에 따라 다른 결과를 얻을 수 있음.
+/**
+ * 데코레이터 패턴(Decorator Pattern)은 객체의 기능을 동적으로 추가하거나 확장할 수 있는 구조적 디자인 패턴입니다.
+ * 이 패턴은 상속을 사용하지 않고도 객체의 행동을 유연하게 확장할 수 있게 해줍니다.
+ */
 
 const strs = new Strings();
 strs.add('Hello!');

@@ -1,5 +1,4 @@
 import Item from "./interface/Item";
-
 export type ItemName = "bow" | "sword" | "shield"
 
 export default abstract class Factory{

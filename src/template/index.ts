@@ -1,7 +1,11 @@
 import Article from "./Article";
 import EditableDisplayArticle from "./EditableDisplayArticle";
 import SimpleDisplayArticle from "./SimpleDisplayArticle";
-
+/**
+ * 템플릿 패턴은 알고리즘의 구조를 정의하고, 그 알고리즘의 일부 단계를 서브클래스에서 구현하도록 합니다. 
+ * 기본적인 흐름은 상위 클래스에서 관리하며, 세부 구현은 하위 클래스에서 결정합니다. 
+ * 공통적인 알고리즘 구조를 유지하면서도 특정 단계의 구현을 다양화할 수 있습니다.
+ */
 const article = new Article("GIS 분야의 업무", 
     [
         "공간 DB 구축 및 가공",

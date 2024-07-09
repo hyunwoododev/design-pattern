@@ -6,12 +6,15 @@ import Sword from "./Sword";
 
 class ItemCount{
     private _currentCount = 0
+    
     constructor(private _maxCount:number){}
+
     get maxCount() {return this._maxCount}
 
     isCreatable(): boolean{
         return this._currentCount < this._maxCount
     }
+
     increaseCount(): void{
         if(this.isCreatable) this._currentCount++
     }
@@ -31,6 +34,7 @@ export default class ItemFactory extends Factory{
         const itemCount = this.repository.get(name)
         return itemCount.isCreatable()
     }
+
     protected createItem(name: ItemName): Item {
         let result :Item = null
 
@@ -41,6 +45,7 @@ export default class ItemFactory extends Factory{
         return result
         
     }
+
     protected postprocessItem(name: ItemName): void {
         const itemCount = this.repository.get(name)
         itemCount.increaseCount()
