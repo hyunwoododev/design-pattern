@@ -8,7 +8,8 @@ module.exports = {
     // entry: "./src/adapter/index.ts",
     // entry: "./src/bridge/index.ts",
     // entry: "./src/decorator/index.ts",
-    entry: "./src/factory/index.ts",
+    // entry: "./src/factory/index.ts",
+    entry: "./src/observer/index.ts",
     devtool: "inline-source-map",
     module: {
         rules: [
