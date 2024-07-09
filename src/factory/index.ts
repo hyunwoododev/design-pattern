@@ -1,9 +1,12 @@
 import { ItemName } from "./Factory";
 import ItemFactory from "./ItemFactory";
 
-// 생성을 위한 인터페이스와 생성을 위한 구현 부분이 완전히 분리되어있음.
-// 객체 생성을 위한 패턴 중에 하나로 객체 생성에 필요한 과정을 템플릿처럼 정해 놓고 각 과정을 다양하게 구현 가능
-
+/**
+ * Factory 패턴은 객체 생성 인터페이스와 구현 부분을 완전히 분리하여 객체 생성 과정을 캡슐화하는 디자인 패턴입니다. 
+ * 이를 통해 객체 생성의 세부 사항을 숨기고, 다양한 구현을 템플릿처럼 정의하여 유연하게 사용할 수 있습니다. 
+ * 클라이언트 코드에서는 객체 생성 방식을 몰라도 되므로 결합도가 낮아지고, 유지보수와 확장이 용이해집니다. 
+ * 다양한 객체를 생성해야 할 때 특히 유용합니다.
+ */
 const factory = new ItemFactory();
 const domOutput = document.querySelector("textarea");
 const buttons = document.querySelectorAll("button");

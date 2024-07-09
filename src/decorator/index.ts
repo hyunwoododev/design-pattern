@@ -8,18 +8,16 @@ import Strings from "./String";
  * 이 패턴은 상속을 사용하지 않고도 객체의 행동을 유연하게 확장할 수 있게 해줍니다.
  */
 
+const domPre = document.querySelector("pre");
+
 const strs = new Strings();
 strs.add('Hello!');
 strs.add('My name is Kim Hyoung-Jun.');
 strs.add('I am a GIS Developer.');
 strs.add('Design-Pattern is a powerful tool.');
 
-const domPre = document.querySelector("pre");
-
-// strs.print(domPre);
 const d1 = new SideDecorator(strs, '"');
-// d1.print(domPre);
 const d2 = new LineNumberDecorator(d1);
-// d2.print(domPre);
 const d3 = new BoxDecorator(d2);
+
 d3.print(domPre);
