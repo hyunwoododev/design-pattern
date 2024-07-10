@@ -9,7 +9,9 @@ module.exports = {
     // entry: "./src/bridge/index.ts",
     // entry: "./src/decorator/index.ts",
     // entry: "./src/factory/index.ts",
-    entry: "./src/observer/index.ts",
+    // entry: "./src/observer/index.ts",
+    // entry: "./src/proxy/index.ts",
+    entry: "./src/builder1/index.ts",
     devtool: "inline-source-map",
     module: {
         rules: [
