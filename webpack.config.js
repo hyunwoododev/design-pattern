@@ -13,7 +13,8 @@ module.exports = {
     // entry: "./src/proxy/index.ts",
     // entry: "./src/builder1/index.ts",
     // entry: "./src/builder2/index.ts",
-    entry: "./src/abstract-factory/index.ts",
+    // entry: "./src/abstract-factory/index.ts",
+    entry: "./src/flyweight/index.ts",
     devtool: "inline-source-map",
     module: {
         rules: [
