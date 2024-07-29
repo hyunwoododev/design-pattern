@@ -10,12 +10,8 @@ import UIFactory from "./UIFactory";
 let factory : UIFactory
 const flatMode = false
 
-if(flatMode){
-    factory = new FlatUIFactory()
-}else{
-    factory = new ThreeDUIFactory()
-}
-
+if(flatMode) factory = new FlatUIFactory()
+else factory = new ThreeDUIFactory()
 
 const domButton = document.querySelector(".button") as HTMLElement
 const domCheckbox = document.querySelector(".checkbox") as HTMLElement
